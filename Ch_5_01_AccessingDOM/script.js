@@ -8,3 +8,8 @@ console.log("Inner HTML is ", mainTitle.innerHTML);
 console.log("Child nodes: ", mainTitle.childNodes);
 console.log("Child Nodes count: ", mainTitle.childNodes.length);
 
+
+// get all links in html page
+var allLinks = document.getElementsByTagName("a");
+console.log("All links: ", allLinks);
+
