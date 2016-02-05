@@ -1,16 +1,20 @@
 
-document.onclick = function() {
-	alert("You Clicked somewhere in the Document");
+function init() {
+	document.onclick = function() {
+		alert("You Clicked somewhere in the Document");
+	};
+
+
+	var image = document.getElementById('mainImage');
+	image.onclick = function() {
+		alert("You Clicked somewhere in the main Image");
+	};
+}
+
+
+window.onload = function () {
+	init();
 };
-
-
-var image = document.getElementById('mainImage');
-image.onclick = function() {
-	alert("You Clicked somewhere in the main Image");
-};
-
-
-
 
 // use the commented-out code for reference, or just write your own. 
 
