@@ -22,11 +22,15 @@ console.log(sidebar.innerHTML);
 var newHeading = document.createElement('h1');
 var newParagraph = document.createElement('p');
 
-// adding content using easier but not so standard way to newly created nodes
-newHeading.innerHTML = 'Did you Know?';
-newParagraph.innerHTML = 'Assam produces more than 1 billion kg of Tea each year';
+// creating content using correct/standard way to be added to  created nodes later
+var h1Text = document.createTextNode('Did you Know?');
+var paraText = document.createTextNode('Assam produces more than 1 billion kg of Tea each year');
 
-// add node to document
+// add textNodes to corresponding parent nodes
+newHeading.appendChild(h1Text);
+newParagraph.appendChild(paraText);
+
+// add nodes to document
 document.getElementById("trivia").appendChild(newHeading);
 document.getElementById("trivia").appendChild(newParagraph);
 
