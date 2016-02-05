@@ -17,3 +17,17 @@ console.log(mainTitle.innerHTML);
 // just displays all the HTML of children (raw HTML of all children nodes)
 var sidebar = document.getElementById('sidebar');
 console.log(sidebar.innerHTML);
+
+// creating new 'nodes'
+var newHeading = document.createElement('h1');
+var newParagraph = document.createElement('p');
+
+// adding content using easier but not so standard way to newly created nodes
+newHeading.innerHTML = 'Did you Know?';
+newParagraph.innerHTML = 'Assam produces more than 1 billion kg of Tea each year';
+
+// add node to document
+document.getElementById("trivia").appendChild(newHeading);
+document.getElementById("trivia").appendChild(newParagraph);
+
+
