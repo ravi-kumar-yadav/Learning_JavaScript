@@ -13,3 +13,8 @@ console.log("Child Nodes count: ", mainTitle.childNodes.length);
 var allLinks = document.getElementsByTagName("a");
 console.log("All links: ", allLinks);
 
+
+// setting the alignment of 'mainContent' div to 'right'
+var mainContent = document.getElementById("mainContent");
+mainContent.setAttribute("align", "right");
+
